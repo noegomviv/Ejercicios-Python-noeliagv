@@ -5,8 +5,15 @@ def main():
     edad=int(input(f"Introduzca su edad {nombre}: "))
 
     # Comprobamos si es mayor de edad - Estructura condicional if - else
-    # Si edad mayor o igual a dieciocho --> Usted es nayor de edad
+
+    # Si edad mayor o igual a dieciocho --> Usted es mayor de edad
     # Sino --> Todavía eres menor de edad
 
+    if edad > 18:
+     print("Usted es mayor de edad, ya puede conducir.")
+    else:
+        print("Todavía eres menor de edad")
+
 if __name__== "__main__" :
-    main()
+   main()
+   
