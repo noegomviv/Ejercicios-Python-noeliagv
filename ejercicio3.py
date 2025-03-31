@@ -26,7 +26,7 @@ def obtenerCalificaion(nota) :
     elif 9 <= nota <= 10:
         return "Sobresaliente"
     else:
-        return "Nota incorrecta"
+        return "Incorrecta"
 
 # Programa principal
 def main():
