@@ -20,6 +20,12 @@ def fibonacci(n) :
         vector.append(1)
         vector.append(1)
         # Creamos aquí el bucle WHILE
+        contador = 2 
+        
+        while contador < n:
+            vector.append(vector[contador - 1] + vector[contador - 2]) 
+            contador=contador+1 
+
         # --> Implemente el código del Bucle
     elif n==1 :
         vector[0]=1
