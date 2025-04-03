@@ -6,16 +6,33 @@ import random
 # Función que determina si un numero es par.
 
 def esPar(numero) :
-    return True # --> Implemente código de la función <--
+    resto = (numero % 2)
+    if resto == 0:
+        return True # --> Implemente código de la función <--
+    else:
+        return False
 
 def esImpar(numero) :
-    return False # --> Implemente código de la función <--
+    resto = (numero % 2)
+    if resto !=0:
+        return True # --> Implemente código de la función <--
+    else:
+        return False
+   # --> Implemente código de la función <--
 
+
+#por aqui voy :()
 def generarPares(valores, inicio) :
     pares=[]
     numero=inicio
-    if esImpar(inicio) :
-        numero=inicio+1
+    contador=valores
+    while contador > 0 :
+        if esPar(numero) :
+            pares.append(numero)
+            numero=numero+2
+            contador=contador-1
+        else :
+            numero=numero+1   
     # --> Complete código de la función <--
 
     return pares
@@ -23,11 +40,16 @@ def generarPares(valores, inicio) :
 def generarImpares(valores, inicio) :
     impares=[]
     numero=inicio
-    if esPar(inicio) :
-        numero=inicio+1
-
+    contador=valores
+    while contador > 0 :
+        if esImpar(numero) :   
+            impares.append(numero)
+            numero=numero+2
+            contador=contador-1
+        else :
+            numero=numero+1
     # --> Complete código de la función <--
-
+    
     return impares
 
 
